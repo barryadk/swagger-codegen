@@ -1,0 +1,20 @@
+openapi: 3.0.3
+info:
+  version: '1.0.0'
+  title: parse-api-123
+  description: Test swagger-parser
+paths:
+  /parse:
+    get:
+      description: Parse domain test.
+      operationId: getParse
+      parameters:
+      - in: query
+        name: parse
+        required: false
+        schema:
+          $ref: 'https://api.dev.swaggerhub.com/domains/BK-Org/Parse/1.0#/components/schemas/Parse'
+      responses:
+        '200':
+          description: OK
+x-azure-api-id: 'sh-9cc0fc8a-6611-48a1-8ae5-bf99384e941f'
